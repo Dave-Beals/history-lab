@@ -154,17 +154,24 @@
         text-decoration: none;
   }
 
+
   /*media queries for mobile and tablet*/
 
   @media (min-width: 1270px) {
     .main-title {
-      font-size: 7rem;
+      font-size: 8rem;
+    }
+    .seymour-head {
+      display: none;
     }
   }
 
   @media (min-width: 993px) and (max-width: 1269px) {
     .main-title {
       font-size: 6.5rem;
+    }
+    .seymour-head {
+      display: none;
     }
   }
 
@@ -173,7 +180,10 @@
       font-size: 5.5rem;
     }
     #porthole {
-      width: 35vw;
+      width: 25vw;
+    }
+    .seymour-head {
+      display: none;
     }
   }
 
@@ -182,16 +192,19 @@
       font-size: 4.5rem;
     }
     #porthole {
-      width: 40vw;
+      width: 30vw;
     }
     .subtitle {
       font-size: 3rem;
     }
+    .seymour-head {
+      display: none;
+    }
   }
 
-  @media (min-width: 0px) and (max-width: 320px) {
+  @media (min-width: 0px) and (max-width: 630px) {
     .main-title {
-      font-size: 4rem;
+      font-size: 3.75rem;
       margin: 0 auto 0;
     }
     #porthole {
@@ -201,11 +214,18 @@
       display: none;
     }
     .choose {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       margin-top: 5rem;
     }
     .themes-nav {
       flex-direction: column;
+    }
+    .seymour-head {
+      width: 60vw;
+      position: fixed;
+      bottom: 0;
+      right: 25%;
+      left: 20%;
     }
   }
 
