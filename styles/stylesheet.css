@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Funhouse";
+  src: url("fonts/Funhouse.ttf") format("truetype");
+}
+
+#home-body {
+  background: radial-gradient(#5f5fef, #1f1f66);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  border: 1.5rem solid #18182d;
+}
+
+#content-holder {
+  background: radial-gradient(#5f5fef, #1f1f66);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  border: 1.5rem solid #18182d;
+  margin: 0;
+}
+
+.flex-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.themes-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: gray;
+}*/
+
+#porthole {
+  width: 25vw;
+  -webkit-filter: drop-shadow(7px 7px 5px #161619);
+  filter: drop-shadow(7px 7px 5px #161619);
+}
+
+#placeholder-image {
+  width: 80vw;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.main-title {
+  color: white;
+  text-shadow: -3px 0 #1b1b47, 0 3px #1b1b47, 3px 0 #1b1b47, 0 -3px #1b1b47;
+  -webkit-filter: drop-shadow(4px 4px 3px #161619);
+  filter: drop-shadow(4px 4px 2px #161619);
+  font-size: 6.5rem;
+  margin: 10px 0 5px;
+  padding-top: 0rem;
+  font-family: 'Funhouse';
+}
+
+.subtitle {
+  color: white;
+  -webkit-filter: drop-shadow(4px 4px 3px #161619);
+  filter: drop-shadow(4px 4px 2px #161619);
+  /*text-shadow: -2px 0 #1b1b47, 0 2px #1b1b47, 2px 0 #1b1b47, 0 -2px #1b1b47;*/
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.choose {
+  margin-top: 2rem;
+  color: white;
+  -webkit-filter: drop-shadow(4px 4px 3px #161619);
+  filter: drop-shadow(4px 4px 2px #161619);
+  /*text-shadow: -2px 0 #1b1b47, 0 2px #1b1b47, 2px 0 #1b1b47, 0 -2px #1b1b47;*/
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.themes-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 1rem .5rem 0 .5rem;
+  font-size: 2rem;
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+  color: #e86d10;
+  background-color: yellow;
+  border: .25rem solid #2c2c51;
+  border-radius: 15px;
+}
+
+.themes-btn:hover {
+  background-color: #FFFFCC;
+}
+
+.themes-btn:active {
+  -webkit-filter: drop-shadow(4px 4px 3px #161619);
+  filter: drop-shadow(4px 4px 2px #161619);
+  transform: translateY(4px);
+}
+
+.themes-btn:focus {
+  outline: none;
+}
+
+.themes-btn a {
+    color: #e86d10;
+    text-decoration: none;
+}
+
+.main-menu-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin: 1rem 78rem 1rem .5rem;
+    font-size: 2rem;
+    padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+    color: #e86d10;
+    background-color: yellow;
+    border: .25rem solid #2c2c51;
+    border-radius: 15px;
+  }
+
+  .main-menu-btn:hover {
+    background-color: #FFFFCC;
+  }
+
+  .main-menu-btn:active {
+    -webkit-filter: drop-shadow(4px 4px 3px #161619);
+    filter: drop-shadow(4px 4px 2px #161619);
+    transform: translateY(4px);
+  }
+
+  .main-menu-btn:focus {
+    outline: none;
+  }
+
+  .main-menu-btn a {
+        color: #e86d10;
+        text-decoration: none;
+  }
+
+  /*media queries for mobile and tablet*/
+
+  @media (min-width: 1270px) {
+    .main-title {
+      font-size: 7rem;
+    }
+  }
+
+  @media (min-width: 993px) and (max-width: 1269px) {
+    .main-title {
+      font-size: 6.5rem;
+    }
+  }
+
+  @media (min-width: 756px) and (max-width: 992px) {
+    .main-title {
+      font-size: 5.5rem;
+    }
+    #porthole {
+      width: 35vw;
+    }
+  }
+
+  @media (min-width: 631px) and (max-width: 756px) {
+    .main-title {
+      font-size: 4.5rem;
+    }
+    #porthole {
+      width: 40vw;
+    }
+    .subtitle {
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 320px) {
+    .main-title {
+      font-size: 4rem;
+      margin: 0 auto 0;
+    }
+    #porthole {
+      display: none;
+    }
+    .subtitle {
+      display: none;
+    }
+    .choose {
+      font-size: 2.5rem;
+      margin-top: 5rem;
+    }
+    .themes-nav {
+      flex-direction: column;
+    }
+  }
+
+
+/*font-family: 'Corben', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Open Sans', sans-serif;*/
